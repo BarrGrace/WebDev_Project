@@ -4,49 +4,46 @@
 
     <title>Home Page</title>
     <link rel = "shortcut icon" type = "image" href = "London icon.png">
+    <link rel = "stylesheet" href = "style.css">
 
-    <style>
-    
-    img {
-
-        width: 600px;
-        height: 300px;
-        border: 2px solid rgb(34, 80, 139);
-        box-shadow: 10px 10px lightgray;
-    }
-
-    h3 {
-
-        font-style: italic;
-    }
-
-    h2 {
-
-        font-style: oblique;
-    }
-
-    </style>
 </head>
 
-<body style = "background-color: beige">
+<body class="dark-mode">
 
-    <nav align = "center">
-        <a href = "Schools.html" target = "_blank">Schools</a> |
-        <a href = "#Movie">Movie</a> |
-        <a href = "#Food">Food</a> |
-        <a href = "#Place">Place</a> | 
-        <a href = "404.html" target = "_blank">404</a>
+    <center><h2>Hello!<br>Welcom to my website. <br>My name is Barr Grace. I'm a student in the WebDev bootcamp.</h2></center>
+
+    
+
+    <nav>
+
+        <ul>
+        <li><a href = "Schools.html" target = "_blank">Schools</a></li>
+        <li><a href = "#Movie">Movie</a></li>
+        <li><a href = "#Food">Food</a></li>
+        <li><a href = "#Place">Place</a></li>
+        <li><a href = "#Form">Form</a></li>
+        <li><a href = "https://github.com/BarrGrace/WebDev_Project">GitHub</a></li>
+        </ul>
 
     </nav>
 
+    <header>
+        <img id = "icon" src = "login.png" alt = "" align = right>
+        <a href = "Home.html"><img id = "icon" src="tree logo.png" alt = "" align = left></a>
+        <a href = "#home"><h1 align = left>WebDev Bootcamp</h1></a>
+        
+    </header>
+
     <span id = "Movie">
-    <h2>Favorite movie: <a href = "https://www.imdb.com/title/tt0304141/?ref_=nv_sr_srsg_0">Harry Potter and the Prisoner of Askaban </a></h2>
-    
-    <center><img src = "Harry Potter and the Prisoner of Azkaban.jpg" height = "300" width = "600" div></center>
+    <h2>Favorite movie:</h2>
+    <br>
+    <center><a href = "https://www.imdb.com/title/tt0304141/?ref_=nv_sr_srsg_0" target = "_blank"><img class="image" src = "Harry Potter and the Prisoner of Azkaban.jpg"></a></center>
+    <br>
 
-    <h3>Description</h3>
+
+    <h2>Description</h2>
     <p>Harry Potter, Ron and Hermione return to Hogwarts School of Witchcraft and Wizardry <br /> for their third year of study, where they delve into the mystery surrounding an escaped <br /> prisoner who poses a dangerous threat to the young wizard.</p>
-
+    
     <h3>Why you like the movie</h3>
     <p>Great effects & story</p>
 
@@ -56,7 +53,7 @@
 
     <span id = "Place">
     <h2>A place you've enjoyed visiting: 
-    <a href = "https://www.google.com/maps/place/Big+Ben/@51.5007292,-0.1268141,17z/data=!3m1!4b1!4m6!3m5!1s0x487604c38c8cd1d9:0xb78f2474b9a45aa9!8m2!3d51.5007292!4d-0.1246254!16zL20vMDI2eWRj?hl=en">London</a></h2>
+    <a href = "https://www.google.com/maps/place/Big+Ben/@51.5007292,-0.1268141,17z/data=!3m1!4b1!4m6!3m5!1s0x487604c38c8cd1d9:0xb78f2474b9a45aa9!8m2!3d51.5007292!4d-0.1246254!16zL20vMDI2eWRj?hl=en" style = "color: green">London</a></h2>
 
     <p>London is the capital city of the United Kingdom. It is the U.K.'s largest metropolis and its <br /> economic, transportation, and cultural centre. London is also among the oldest of the world's <br> great cities, with its history spanning nearly two millennia.</p>
 
@@ -65,13 +62,13 @@
 
     <h3>Some Photoes</h3>
     <center>
-    <img src = "london1.png" height = "300" width = "600">
-    <br><br>
-    <img src = "london 2.png" height = "300" width = "600">
-    </center>
-    
 
-    
+        <div class = "scroll">
+        <img class = "image" src = "london1.png">
+        <br><br>
+        <img class = "image" src = "london 2.png">
+        </div>
+    </center>
     
     <span id = "Food">
     <h2>Favorit Food:</h2>
@@ -83,6 +80,75 @@
         <li>Shepherd's Pie</li>
         <li>Yorkshire Pudding</li>
     </ul>
+
+
+    <span id = "Form">
+    <h2>Form</h2>
+    <form action = "Home.html" method = "get">
+        
+        <div class = "line-box">
+        <label for "name">Full name:</label>
+        <input class="name-bar" type = "text" name = "Name" id = "name" required>
+
+        <lable for "phone" class = "right">Phone number:</lable>
+        <input type = "tel" name = "phone" id = "phone" pattern = "[0-9]{10}" required>
+
+        <br><br>
+        <lable for "email">email:</lable>
+        <input type = "email" name = "email" id = "email" required class = "email-right">
+        
+        
+        <lable for "date" class = "right">Birthday:</lable>
+        <input type = "date" name = "date" id = "date" min = "1900-01-01" max = "2050-01-01" value = "2000-01-01" class = "birthday-right">
+        </div>
+        
+        
+        <br>
+        <div class = "line-box">
+
+            <label for "rate">Rate:</label>
+            <label for "1">1</label>
+            <input type="radio" name="rate" id = "1" value = "1">
+            <label for "2">2</label>
+            <input type="radio" name="rate" id = "2" value = "2">
+            <label for "3">3</label>
+            <input type="radio" name="rate" id = "2" value = "3">
+            <label for "4">4</label>
+            <input type="radio" name="rate" id = "3" value = "4">
+            <label for "5">5</label>
+            <input type="radio" name="rate" id = "4" value = "5">
+            
+
+            <label class = "right">How did you find this website?</label>
+            
+            <textarea name = "message" row = "1" cols = "10"></textarea >
+            
+
+            
+            <div>
+
+                <br>
+                <label for "options">How did you find the website?</label>
+                <br><br>
+                <select name = "Options" id = options>
+    
+                    <option value = "GitHub">GitHub</option>
+                    <option value = "LinkedIn">LinkedIn</option>
+                    <option value = "WebDev">WebDev</option>
+                    <option value = "Google">Google</option>
+                    <option value = "other">other</option>
+                </select>
+            </div>
+        </div>
+
+        <br>
+        <button type = "submit">Submit</button>
+        <button type = "reset">reset</button>
+    </form>
+
+
+    <br>
+    <footer><center>Barr Grace<br><a href = "https://accounts.google.com/signin/v2/challenge/pwd?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser&cid=1&navigationDirection=forward&TL=ADFpJfNI4LRT0DglN_GYBMPlG45AwZxep8EC_l4EVTax-0Gh6aYxJ5Ojfac0rnIS" style = "color: lightgreen">BarrGrace314@gmail.com</center></footer>
 
 </body>
 </html>

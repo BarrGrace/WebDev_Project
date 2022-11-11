@@ -1,0 +1,273 @@
+/* to make a dark mode: */
+.dark-mode {
+
+    background-color: black;
+    color: white;
+}
+
+
+
+header {
+    
+    position:absolute;
+    background: rgb(60, 141, 64);
+    width: 100%;
+    height: 6%;
+    top: 0;
+    left: 0;
+    
+}
+
+.right {
+
+    margin-left: 110px;
+    align-items: right;
+}
+
+
+
+.email-right {
+
+    margin-left: 28px;
+}
+
+.birthday-right {
+
+    margin-left: 37px;
+}
+
+.line-box {
+
+    padding: 8px 12px;
+    border: 1px solid blue;
+    position: relative;
+    overflow: hidden;
+    width: 57%;
+    background-color: rgb(201, 235, 213);
+}
+
+.name-bar {
+
+    margin-right: 0px;
+}
+
+
+
+nav {
+
+    padding: 0;
+    margin: 0;
+    background: green;
+    height: 100%;
+    width: 9%;
+    position: fixed;
+    top: 0%;
+    left: 0;
+}
+
+
+footer {
+
+    position: absolute;
+    background-color: rgb(60, 141, 64);
+    width: 100%;
+    height: 8%;
+    left: 0;
+    font-size: 20px;
+    color: lightgreen;
+}
+
+nav a {
+
+    display: inline-block;
+    text-decoration: none;
+    padding: 0% 0%;
+    font-weight: bold;
+    
+}
+
+nav a:hover {
+
+    color: rgb(229, 238, 231);
+    background-color: darkgreen;
+    letter-spacing: 0.2em;
+    transition: 1s;
+    
+    
+}
+
+a {
+
+    text-decoration: none;
+}
+
+#no-decoration {
+
+    text-decoration: none;
+}
+
+.scroll{
+
+    height: 300px;
+    width: 630px;
+    background-color: white;
+    overflow: auto;
+}
+
+body header:hover{
+
+    color: rgb(0, 255, 0);
+    background-color: darkgreen;
+    letter-spacing: 0.5em;
+    transition: 2s;
+    
+}
+
+ body > header > a > h1 {
+
+    font-size: 39px;
+}
+
+body > nav > ul{
+
+    list-style: none;
+    
+    border-radius: 3px;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 50%;
+    
+}
+
+body > nav > ul > li > a{
+
+    font-size: 17px;
+    color: rgb(109, 226, 115);
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-bottom: 15%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+body > nav > ul > li:hover {
+
+    transform: scale(1.2);
+    background-color: rgb(87, 228, 157);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+
+body {
+
+    margin-left: 14%;
+    padding: 10px;
+    margin-top: 6%;
+
+}
+
+#bottom{
+
+    bottom: 0;
+}
+
+
+
+body > nav > ul > li:nth-child(odd){
+
+    background-color: rgba(63, 136, 14, 0.788);
+}
+
+#icon {
+
+    border: none;
+    box-shadow: none;
+    height: 43px;
+    width: 43px;
+    
+}
+
+.image {
+
+    width: 600px;
+    height: 300px;
+    padding: 0;
+    border: 10px;
+    margin: 0;
+    padding: 0%;
+    border: 3px solid rgb(17, 17, 102);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 2);
+}
+
+h3 {
+
+    font-style: italic;
+}
+
+h2 {
+
+    font-style: oblique;
+}
+
+h1 {
+
+    font-size: 39px;
+    margin-top: 0;
+    color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .image {
+
+        width: 300px;
+        height: 150px;
+        
+    }
+
+    nav {
+
+        height: 0%;
+        width: 0%;
+        
+    }
+
+    .right {
+
+        margin-left: none;
+        align-items: none;
+        margin: 0px;
+        
+    }
+    
+      
+    .email-right {
+    
+        margin-left: 0px;
+    }
+    
+    .birthday-right {
+    
+        margin-left: none;
+    }
+
+    header {
+    
+        position:fixed;
+        height: 20%;
+        
+    }
+
+    .name-bar {
+
+        margin-right: 10px;
+    }
+    
+}
