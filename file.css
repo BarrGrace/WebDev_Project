@@ -1,0 +1,96 @@
+:root {
+
+    --container-colour: #2196F3;
+    --button-colour: rgba(217, 226, 243);
+    --text-colour: rgba(255, 255, 255, 0.8)
+    
+    
+}
+
+.dark-mode {
+
+    --container-colour: black;
+    --button-colour: gray;
+    --text-colour: rgb(203, 202, 202);
+    background-color: rgba(169, 169, 169, 0.188);
+    
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: var(--container-colour);  
+    margin: auto;
+    width: 70%;
+    height: 100%;
+}
+
+.grid-container > button {
+    background-color: var(--button-colour);
+    border: solid black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+
+div > img {
+
+    height: 80%;
+}
+
+
+text {
+    background-color: var(--text-colour);
+    border: solid black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+screen {
+
+    background-color: rgba(213, 220, 208);
+    border: solid black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid-container > button:hover{
+
+    border-color: orange;
+} 
+
+
+
+.colum {
+
+    flex-direction: column;
+}
+
+#beige-background {
+
+    background-color: beige;
+}
+
+.bar {
+
+    grid-column: 2/ 5;
+}
+
+body.dark {
+
+    background-color: black;
+}
+
+
+
+
+
+
