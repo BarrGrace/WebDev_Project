@@ -2,8 +2,68 @@
 <html lang="en">
 <head>
     <title>Document</title>
+    <style>
+        body > form > ul{
+
+            position: fixed;
+            top: 40%;
+            left: 40%;
+            font-size: larger;
+            list-style: none;
+            border: 2px solid black;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: beige;
+        }
+        body > form > ul > li > center > button > a{
+
+            text-decoration: none;
+        }
+    </style>
 </head>
-<body>
+<body style = "background-color: bisque;">
+    <form action = "calculator.html" method = "get">
+        
+    <ul>
+        <li>
+        <label for="colour">Choose a colour:</label>
+        
+        <select name="colour">
     
+            <option value="normal" id = 'NC'>normal</option>
+            <option value="red" id = 'R'>red</option>
+            <option value="blue" id = 'B'>blue</option>
+            <option value="green" id = 'G'>green</option>
+            <option value="purple" id = 'P'>purple</option>
+            <option value="gray" id = 'Gr'>Gray</option>
+        </select>
+        </li>
+        
+        <li>
+        <label for="font">Choose a font:</label>
+        <select name = "font">
+    
+            <option value="normal" id = 'NF'>normal</option>
+            <option value="italic" id = 'V'>italic</option>
+            <option value='Courier New' id = 'CN'>Courier New</option>
+            <option value='Georgia' id = 'G'>Georgia</option>
+            <option value='Lucida Sans' id = 'Ls'>Lucida Sans</option>
+        </select>
+        </li>
+    
+        <li>
+            <label for = "Mode">Dark Mode:</label>
+            On<input type = "radio" name = "Mode" id = "dark-mode" value= "on">
+            Off<input type="radio" name = "Mode" id = "light-mode" value = "off" checked>
+        </li>
+    
+        <li>
+            <br>
+            <center><button type="submit">submit</button></center>
+        </li>
+        </ul>
+    </form>
 </body>
 </html>

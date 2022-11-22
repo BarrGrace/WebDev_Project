@@ -1,0 +1,22 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "application.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarrGrace/WebDev_Project.git"
+  },
+  "author": "BarrGrace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BarrGrace/WebDev_Project/issues"
+  },
+  "homepage": "https://github.com/BarrGrace/WebDev_Project#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

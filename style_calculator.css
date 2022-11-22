@@ -1,0 +1,337 @@
+:root {
+
+    --container-colour: #2196F3;
+    --button-colour: rgba(217, 226, 243);
+    --text-colour: rgba(255, 255, 255, 0.8);
+    --background-colour: rgba(166, 204, 195, 0.692);
+    --number-colours: beige;
+    --screen-colour: rgb(165, 190, 146);
+    --hover-colour: orange;
+    --mode-buttons: rgb(247, 203, 172);
+    --scientific-colour: rgb(143, 221, 92);
+    --operation-log-colour: #9790919b;
+    --head-title-font-size: 35px;
+    --display-science-grid: grid;
+    --clock-colour: rgba(217, 226, 243);
+    --sci-button: var(--mode-buttons);
+    --sci-hover: green;
+}
+
+.dark-mode {
+
+    --container-colour: black;
+    --button-colour: rgba(20, 153, 202, 0.559);
+    --text-colour: rgba(46, 148, 185, 0.738);
+    --background-colour: rgba(5, 7, 104, 0.925);
+    --number-colours: rgb(90, 110, 200);
+    --screen-colour: rgb(112, 236, 96);
+    --hover-colour: rgb(74, 214, 74);
+    --mode-buttons: rgba(69, 202, 196, 0.788);
+    --operation-log-colour: rgb(29, 143, 105);
+    --scientific-colour: rgb(29, 143, 105);
+    --clock-colour: rgba(20, 153, 202, 0.559);
+    --sci-button: rgba(69, 202, 196, 0.788);
+    --sci-hover: rgb(89, 163, 182);
+}
+
+#sci {
+
+    background-color: var(--mode-buttons);
+}
+
+#sci:hover {
+
+    background-color: var(--hover-colour);
+}
+
+.blue {
+
+    --button-colour: rgb(63, 115, 182);
+    --text-colour: rgba(11, 82, 76, 0.8);
+    --background-colour: rgba(20, 173, 138, 0.692);
+    --number-colours: rgb(77, 43, 156);
+    --hover-colour: rgb(25, 218, 185);
+    --mode-buttons: rgb(22, 151, 145);
+    --scientific-colour: rgb(44, 145, 175);
+    --operation-log-colour: #47c2c29b;
+    --sci-hover: rgb(33, 99, 90);   
+}
+
+.red {
+
+    --button-colour: rgb(233, 22, 22);
+    --text-colour: rgba(216, 68, 10, 0.8);
+    --background-colour: rgba(240, 186, 172, 0.692);
+    --number-colours: rgb(209, 98, 7);
+    --hover-colour: rgb(244, 248, 21);
+    --mode-buttons: rgb(240, 227, 51);
+    --scientific-colour: rgb(148, 24, 3);
+    --operation-log-colour: #ee50069b;
+    --sci-hover: orange;   
+}
+
+.green {
+
+    --button-colour: rgb(40, 233, 22);
+    --text-colour: rgba(10, 216, 27, 0.8);
+    --background-colour: rgba(30, 196, 99, 0.692);
+    --number-colours: rgb(24, 192, 94);
+    --hover-colour: rgb(5, 218, 154);
+    --mode-buttons: rgb(12, 235, 97);
+    --scientific-colour: rgb(29, 131, 8);
+    --operation-log-colour: #367e289b;
+    --sci-hover: yellowgreen;     
+}
+
+.purple {
+
+    --button-colour: rgb(120, 22, 233);
+    --text-colour: rgba(8, 93, 150, 0.8);
+    --background-colour: rgba(107, 163, 226, 0.692);
+    --number-colours: rgb(106, 20, 156);
+    --hover-colour: rgb(3, 59, 180);
+    --mode-buttons: rgb(12, 123, 143);
+    --scientific-colour: rgb(158, 28, 209);
+    --operation-log-colour: #702d7e9b;  
+    --sci-hover: purple;   
+}
+
+.gray {
+
+    --button-colour: rgb(107, 107, 107);
+    --text-colour: rgba(43, 43, 43, 0.8);
+    --background-colour: rgba(190, 190, 190, 0.692);
+    --number-colours: rgb(58, 58, 58);
+    --hover-colour: rgb(247, 249, 255);
+    --mode-buttons: rgb(167, 167, 167);
+    --scientific-colour: rgb(124, 117, 117);
+    --operation-log-colour: #8d85859b;
+    --sci-hover: rgb(231, 231, 231);     
+}
+
+.hide-sicence-grid {
+
+    --display-science-grid: none;
+}
+
+.clock-colour {
+
+    --clock-colour: var(--mode-buttons);
+}
+
+#modes:hover {
+
+    background-color: var(--hover-colour);
+}
+
+#input-colour-switch:hover {
+
+    background-color: var(--hover-colour);
+}
+
+body > div > button > img{
+
+    width: 40px;
+    height: 40px;
+}
+
+body > div > a > img{
+
+    width: 40px;
+    height: 40px;
+}
+
+#science-grid{
+
+    display: var(--display-science-grid);
+}
+
+science {
+
+    background-color: var(--scientific-colour);
+    border: solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 82px;
+    width: 125;
+    font-size: 40px;
+}
+
+#XY {
+
+    height: 87px;
+}
+
+#mod {
+
+    height: 74px;
+}
+
+
+#scienceBlock {
+
+    grid-row: 1/2;
+    grid-column: 1/3;
+    font-size: var(--head-title-font-size);
+    width: 250px;
+    height: 88px;
+    border: solid black;
+    background-color: var(--scientific-colour);
+}
+
+#science-second {
+
+    grid-column: 1/3;
+    grid-row: 1/4;
+    height: 275px;
+    width: 250px;
+    background-color: var(--scientific-colour);
+}
+
+#science-base {
+
+    grid-column: 1/3;
+    grid-row: 7/9;
+    height: 130px;
+}
+
+#input-colour-switch, #modes {
+
+    background-color: var(--mode-buttons);
+}
+
+.operation-grid{
+
+    display: grid;
+    background-color: var(--operation-log-colour);
+}
+
+operation {
+
+    border: solid black;   
+}
+
+#operationLog {
+
+    grid-row: 1/2;
+    grid-column: 1/3;
+    font-size: var(--head-title-font-size);
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 84px;
+    width: 250px;
+}
+
+#history {
+
+    grid-row: 2/9;
+    grid-column: 1/3;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    clear: left;
+    height: 578px;
+}
+
+#base-block {
+
+    grid-column: 6/8;
+    grid-row: 7/9;
+    background-color: var(--scientific-colour);
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: var(--container-colour);
+    width: 50%;
+    height: 100%;
+}
+
+.grid-container > button, a, block {
+    background-color: var(--button-colour);
+    border: solid black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+text {
+    background-color: var(--text-colour);
+    border: solid black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+screen {
+
+    background-color: var(--screen-colour);
+    border: solid black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover, .grid-container > a:hover{
+
+    background-color: var(--hover-colour);
+} 
+
+.colum {
+
+    flex-direction: column;
+}
+
+#beige-background {
+
+    background-color: var(--number-colours);
+}
+
+#beige-background:hover {
+
+    background-color: var(--hover-colour);
+}
+
+.bar {
+
+    grid-column: 2/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poll {
+
+    grid-row : 7 / 9;
+}
+
+.equal {
+
+    grid-column: 5/5;
+    grid-row : 7 / 9;
+}
+
+body {
+
+    background-color: var(--background-colour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+science:hover {
+
+    background-color: var(--sci-hover);
+}
+
+
+
+

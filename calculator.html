@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel = "stylesheet" href = "style_calculator.css">
+</head>
+<body>
+
+  <space></space>
+  
+  <div class = "operation-grid">
+
+    <operation id = "operationLog"><img src = "clock.png" width = "35px">Operation log</operation>
+    <operation id = "history"></operation>
+  </div>
+
+
+<div class="grid-container">
+
+  <button onclick = "info()"><img src = "i.png"></button>
+  <text class = "bar">My calculator</text>
+  <a href = "config.html"><img src = "geer.png"></a>
+
+  <button id = "input-colour-switch"><img src = "lightbulb.png"></button>
+  <screen class = "bar" id = "screen"></screen>
+  <button onclick = "press('arrow')"><img src = "arrow.png"></button>
+
+  <button id = "modes" onclick = "show_hidden()"><img src = "clock.png"></button>
+  <button class = "bar" onclick = "press('C')"><img src = "C.png"></button>
+  <button onclick = "press('/')"><img src = "dash.png"></button>
+  
+
+  <button id = "sci" onclick = "press('sci')"><img src = "n-square.png"></button>
+  <button id = "beige-background" onclick = "press('7')">7</button>
+  <button id = "beige-background" onclick = "press('8')">8</button>
+  <button id = "beige-background" onclick = "press('9')">9</button>
+  <button onclick = "press('X')"><img src = "x.png"></button>
+
+  <button id = "modes" onclick = "press('cloud')"><img src = "cloud.png"></button>
+  <button id = "beige-background" onclick = "press('4')">4</button>
+  <button id = "beige-background" onclick = "press('5')">5</button>
+  <button id = "beige-background" onclick = "press('6')">6</button>
+  <button onclick = "press('-')"><img src = "-.png"></button>
+
+  <block></block>
+  <button id = "beige-background" onclick = "press('1')">1</button>
+  <button id = "beige-background" onclick = "press('2')">2</button>
+  <button id = "beige-background" onclick = "press('3')">3</button>
+  <button onclick = "press('+')">+</button>
+
+  <block  class = "poll"></block>
+  <button class = "column" onclick = "press('PM')"><img src = "plusMinus.png"></button>
+  <button id = "beige-background" onclick = "press('0')">0</button>
+  <button id = "beige-background" onclick = "press('.')">.</button>
+  <button class = "equal" onclick = "press('=')">=</button>
+
+  <block class = "bar"></block>
+</div>
+
+<div id = "science-grid">
+  <science id = "science-second"></science>
+  <science id = "scienceBlock"><img src = "n-square.png" width = "35px">Scientific</science>
+  
+
+  <science id = XY><img src = "xPower2.png"></science>
+  <science id = XY><img src = "xSqaure.png"></science>
+  <science id = XY><img src = "xPowerY.png"></science>
+  <science id = XY><img src = "xSqaureY.png"></science>
+  <science id = 'mod'>mod</science>
+  <science id = "mod"><img src = "pi.png"></science>
+  <science id = "science-base"><img src = "base.png"></science>
+</div>
+ 
+  
+<script src = "calculator.js"></script>
+<script src = "application.js"></script>
+<script src = "config.js"></script>
+
+</body>
+</html>
