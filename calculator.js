@@ -50,8 +50,29 @@ function sciCalculate(count) {
         return sciCalculate(s1) / sciCalculate(s2);
     }
 
+    index = count.indexOf("%");
+
+    if (index != -1){
+
+        let s1 = count.substring(0, index);
+        let s2 = count.substring(index + 1);
+
+        return Math.pow(sciCalculate(s2),  1 / sciCalculate(s1));
+    }
+
+    index = count.indexOf("^");
+
+    if (index != -1){
+
+        let s1 = count.substring(0, index);
+        let s2 = count.substring(index + 1);
+
+        return Math.pow(sciCalculate(s1),  sciCalculate(s2));
+    }
+
     return parseFloat(count);
 }
+
 
 let current = "0";
 let operaotr = "";
@@ -64,7 +85,10 @@ let history = [''];
 let temp;
 let sci = [''];
 
+
 document.getElementById('screen').innerHTML = current;
+
+
 
 function reset() {
 
@@ -75,17 +99,33 @@ function reset() {
     operaotr = '';
     first_operand = true;
     history = [''];
+    sci = [''];
     document.getElementById("history").innerHTML = history;
+}
+function isExeption(element) {
+
+    if (element == '^2' || element == '2%'|| (element == '3.14159')) {
+
+        return true;
+    }
+
+    return false;
 }
 function press(element){
 
-    if (isDigit(element) || isOperator(element)){
+    // if (element == "&#8730") {
+
+    //     console.log("yes")
+    // }
+
+
+    if (isDigit(element) || isOperator(element) || isExeption(element)){
 
         history.push(element);
         sci.push(element);
     }
 
-    if (isDigit(element)){
+    if (isDigit(element) || isExeption(element)){
 
         if (first_operand){
 
@@ -131,6 +171,7 @@ function press(element){
         if (sciMode) {
 
             current = sciCalculate(sci.join(''));
+            sci = [current];
             current = current.toExponential(4);
             display = current;
         }
@@ -149,7 +190,8 @@ function press(element){
 
     else if (element == 'arrow'){
 
-        history.pop()
+        history.pop();
+        sci.pop();
 
         if (display == operand2){
 
@@ -200,7 +242,7 @@ function press(element){
 
     else if (element == "sci") {
 
-        // reset(); //Part 4 => Task 2 => b.
+        reset(); //Part 3 => Task 3 => a => iii.
         sciOff();
         sciMode = !sciMode;
     }
@@ -276,7 +318,7 @@ function calculate(operand1, operaotr, operand2){
 
 function isOperator(operator){
 
-    operators = "-+X/";
+    operators = "-+X/^%";
 
     for (let i = 0; i < operators.length; i++){
 
@@ -291,7 +333,7 @@ function isOperator(operator){
 
 function isDigit(digit){
 
-    digits = "0123456789";
+    digits = "0123456789.";
 
     for (let i = 0; i < digits.length; i++){
 

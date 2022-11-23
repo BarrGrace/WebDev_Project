@@ -144,6 +144,8 @@ body > div > a > img{
 #science-grid{
 
     display: var(--display-science-grid);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 science {
@@ -153,19 +155,7 @@ science {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 82px;
-    width: 125;
     font-size: 40px;
-}
-
-#XY {
-
-    height: 87px;
-}
-
-#mod {
-
-    height: 74px;
 }
 
 
@@ -183,9 +173,7 @@ science {
 #science-second {
 
     grid-column: 1/3;
-    grid-row: 1/4;
-    height: 275px;
-    width: 250px;
+    grid-row: 2/4;
     background-color: var(--scientific-colour);
 }
 
@@ -193,7 +181,6 @@ science {
 
     grid-column: 1/3;
     grid-row: 7/9;
-    height: 130px;
 }
 
 #input-colour-switch, #modes {
@@ -233,7 +220,7 @@ operation {
     display: flex;
     justify-content: center;
     clear: left;
-    height: 578px;
+    height: 638px;
 }
 
 #base-block {
@@ -246,7 +233,8 @@ operation {
 .grid-container {
 
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     background-color: var(--container-colour);
     width: 50%;
     height: 100%;
@@ -322,9 +310,18 @@ button:hover, .grid-container > a:hover{
 body {
 
     background-color: var(--background-colour);
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+
+html {
+
+    height: 100%;
+    margin: 0;
 }
 
 science:hover {
@@ -332,6 +329,51 @@ science:hover {
     background-color: var(--sci-hover);
 }
 
+@media screen and (max-width: 1050px) {
+    
+    body {
+
+        flex-direction: column;
+    }
+
+    .operation-grid {
+
+        order : 1
+    }
+
+    .operation-grid {
+
+        width: 90%;
+    }
+
+    #operationLog {
+
+        width: 97%;
+    }    
+
+    .grid-container {
+
+        width: 90%;
+    }
+
+    #science-grid {
+
+        width: 90%;
+        margin-left: 2px;
+    }
+
+    #science-second {
+
+        width: 98%;
+    }
+
+    #scienceBlock {
+
+        width: 98%;
+    }
+
+    
+}
 
 
 

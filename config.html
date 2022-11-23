@@ -1,34 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
-    <style>
-        body > form > ul{
-
-            position: fixed;
-            top: 40%;
-            left: 40%;
-            font-size: larger;
-            list-style: none;
-            border: 2px solid black;
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            background-color: beige;
-        }
-        body > form > ul > li > center > button > a{
-
-            text-decoration: none;
-        }
-    </style>
+    <title>config</title>
+    <link rel = "stylesheet" href = "configStyle.css">
+    <meta name = 'viewport' content = "width=device-width, initial-scale=1">
 </head>
 <body style = "background-color: bisque;">
     <form action = "calculator.html" method = "get">
         
     <ul>
-        <li>
+        <li id = list>
         <label for="colour">Choose a colour:</label>
+        <br>
         
         <select name="colour">
     
@@ -41,7 +24,7 @@
         </select>
         </li>
         
-        <li>
+        <li id = list>
         <label for="font">Choose a font:</label>
         <select name = "font">
     
@@ -54,7 +37,7 @@
         </li>
     
         <li>
-            <label for = "Mode">Dark Mode:</label>
+            <label for = "Mode">Dark Mode:</label><br>
             On<input type = "radio" name = "Mode" id = "dark-mode" value= "on">
             Off<input type="radio" name = "Mode" id = "light-mode" value = "off" checked>
         </li>

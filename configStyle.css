@@ -1,0 +1,87 @@
+ul{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    list-style: none;
+    border: 2px solid black;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: beige;
+    height: 70%;
+    width: 70%;
+}
+
+select {
+
+    width: 100px;
+    height: 30px;
+}
+
+
+button {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+#list {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+
+    width: 50%;
+    height: 50%;
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+html {
+
+    height: 100%;
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    
+    ul{
+
+        font-size: 15px;
+        padding-left: 50px;
+        padding-right: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    select {
+
+        width: 65px;
+        height: 20px;
+    }
+
+    #list {
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
