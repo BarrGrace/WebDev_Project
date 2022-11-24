@@ -10,6 +10,21 @@
         
     <ul>
         <li id = list>
+            <label for="background">Choose a background:</label>
+            <br>
+            
+            <select name="background">
+        
+                <option value="normal" id = 'NC'>normal</option>
+                <option value="red" id = 'R'>red</option>
+                <option value="blue" id = 'B'>blue</option>
+                <option value="green" id = 'G'>green</option>
+                <option value="purple" id = 'P'>purple</option>
+                <option value="gray" id = 'Gr'>Gray</option>
+            </select>
+        </li>
+        
+        <li id = list>
         <label for="colour">Choose a colour:</label>
         <br>
         
@@ -37,9 +52,8 @@
         </li>
     
         <li>
-            <label for = "Mode">Dark Mode:</label><br>
-            On<input type = "radio" name = "Mode" id = "dark-mode" value= "on">
-            Off<input type="radio" name = "Mode" id = "light-mode" value = "off" checked>
+            Dark Mode<input type = "radio" name = "Mode" id = "dark-mode" value= "on">
+            Light Mode<input type="radio" name = "Mode" id = "light-mode" value = "off" checked>
         </li>
     
         <li>

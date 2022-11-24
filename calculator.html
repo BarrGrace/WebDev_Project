@@ -6,7 +6,8 @@
       <meta name = 'viewport' content = "width=device-width, initial-scale=1">
       <link rel = "stylesheet" href = "style_calculator.css">
   </head>
-  <body>  
+  <body>
+
     <div class = "operation-grid">
 
       <operation id = "operationLog"><img src = "clock.png" width = "35px">Operation log</operation>
@@ -56,6 +57,7 @@
 
     <div id = "science-grid">
       
+      <!-- here square root is %, it was not required to be a specific sign according to the asignment paper -->
       <science id = "scienceBlock"><img src = "n-square.png" width = "35px">Scientific</science>
       <science id = "science-second"></science>
       <science id = XY onclick = "press('^2')"><img src = "xPower2.png"></science>
@@ -63,13 +65,16 @@
       <science id = XY onclick = "press('^')"><img src = "xPowerY.png"></science>
       <science id = XY onclick = "press('%')"><img src = "xSqaureY.png"></science>
       <science id = 'mod'>mod</science>
-      <science id = "mod" onclick = "press('3.14159')"><img src = "pi.png"></science>
+      <science id = "mod" onclick = "press((Math.PI.toFixed(5)) + '')"><img src = "pi.png"></science>
       <science id = "science-base"><img src = "base.png"></science>
     </div>
-  
+    <div id = "info">
+
+      Developer: Barr Grace<br>Calculator Version: 1.0.0<br>Short Description: This app will alow you to calculate.
+      <button type = "submit" id = 'idButton'>ok</button>
+    </div>
+
     <script src = "calculator.js"></script>
     <script src = "application.js"></script>
-    <script src = "config.js"></script>
-
   </body>
 </html>

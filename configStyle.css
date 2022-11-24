@@ -4,7 +4,7 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 30px;
     list-style: none;
     border: 2px solid black;
     padding-left: 50px;
@@ -20,6 +20,7 @@ select {
 
     width: 100px;
     height: 30px;
+
 }
 
 
@@ -44,6 +45,7 @@ form {
 
     width: 50%;
     height: 50%;
+    padding: 3px;
 }
 
 body {
@@ -71,6 +73,7 @@ html {
         padding-right: 30px;
         padding-top: 50px;
         padding-bottom: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     select {

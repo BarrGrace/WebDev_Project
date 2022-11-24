@@ -1,4 +1,4 @@
-function sciCalculate(count) {
+function sciCalculate(count) {//Eval function for Sci-mode
 
     index = count.indexOf("+");
 
@@ -85,10 +85,7 @@ let history = [''];
 let temp;
 let sci = [''];
 
-
 document.getElementById('screen').innerHTML = current;
-
-
 
 function reset() {
 
@@ -104,7 +101,7 @@ function reset() {
 }
 function isExeption(element) {
 
-    if (element == '^2' || element == '2%'|| (element == '3.14159')) {
+    if (element == '^2' || element == '2%'|| (element == ((Math.PI.toFixed(5)) + ''))) {
 
         return true;
     }
@@ -297,8 +294,7 @@ function sciOff() {
     current = temp;
 }
 
-function calculate(operand1, operaotr, operand2){
-
+function calculate(operand1, operaotr, operand2){//eval function: Normal-mode
 
     if (operaotr == "X"){
 
@@ -353,3 +349,18 @@ function scienceExpression(number) {
         current =  parseFloat(number).toExponential(4);
     }
 }
+
+// (async () => {
+
+//     const respond = await fetch('website');
+//     console.log(respond)
+
+// });
+
+// fetch(website + encodeURI('3+3')).then((respond) => {
+
+//     respond.text().then(result => {
+
+//         console.log(result);
+//     })
+// });

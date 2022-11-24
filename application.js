@@ -1,19 +1,23 @@
 const colourSwitch = document.getElementById("input-colour-switch");
 colourSwitch.addEventListener("click", checkMode);
-
 document.getElementById("operationLog").style.display = "none";
 document.getElementById("history").style.display = "none";
 document.body.classList.add("hide-sicence-grid");
-
 document.getElementById("sci").addEventListener('click', sci_hidden);
+const okButton = document.getElementById("idButton");
+const idB = document.getElementById('info');
+idB.style.display = "none";
+okButton.addEventListener("click", () => {
 
+    idB.style.display = "none";
+});
 let darkMode = true;
 let show = true;
 let sciShow = true;
 
 function info(){
 
-    alert("Developer: Barr Grace\nCalculator Version: 1.0.0\nShort Description: This app will alow you to calculate.");
+    idB.style.display = "";
 }
 function checkMode() {
 
@@ -67,6 +71,7 @@ let urlParams = new URLSearchParams(queryString);
 let M = urlParams.get('Mode');
 let colour = urlParams.get('colour');
 let font = urlParams.get('font');
+let background = urlParams.get('background');
 
 if (font == 'italic') {
 
@@ -121,4 +126,29 @@ if (M == 'on'){
 else {
 
     document.body.classList.remove('dark-mode');
+}
+
+if (background == 'gray') {
+
+    document.body.style.backgroundColor = 'gray';
+}
+else if (background == 'blue') {
+
+    document.body.style.backgroundColor = 'blue';
+}
+else if (background == 'red') {
+
+    document.body.style.backgroundColor = 'red';
+}
+else if (background == 'green') {
+
+    document.body.style.backgroundColor = 'green';
+}
+else if (background == 'purple') {
+
+    document.body.style.backgroundColor = 'purple';
+}
+else {
+
+    document.body.style.backgroundColor = '';
 }
