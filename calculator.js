@@ -110,12 +110,6 @@ function isExeption(element) {
 }
 function press(element){
 
-    // if (element == "&#8730") {
-
-    //     console.log("yes")
-    // }
-
-
     if (isDigit(element) || isOperator(element) || isExeption(element)){
 
         history.push(element);
@@ -350,32 +344,3 @@ function scienceExpression(number) {
     }
 }
 
-const getBtn = document.getElementById("mod");
-
-const getData = () => {
-
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://api.mathjs.org/v4/');
-
-    xhr.onload = () => {
-        
-
-    }
-
-    khr.send();
-}
-
-// (async () => {
-
-//     const respond = await fetch('website');
-//     console.log(respond)
-
-// });
-
-// fetch(website + encodeURI('3+3')).then((respond) => {
-
-//     respond.text().then(result => {
-
-//         console.log(result);
-//     })
-// });
