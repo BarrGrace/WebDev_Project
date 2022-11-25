@@ -350,6 +350,21 @@ function scienceExpression(number) {
     }
 }
 
+const getBtn = document.getElementById("mod");
+
+const getData = () => {
+
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'http://api.mathjs.org/v4/');
+
+    xhr.onload = () => {
+        
+
+    }
+
+    khr.send();
+}
+
 // (async () => {
 
 //     const respond = await fetch('website');
