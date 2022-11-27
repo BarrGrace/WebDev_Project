@@ -1,3 +1,4 @@
+
 function sciCalculate(count) {//Eval function for Sci-mode
 
     index = count.indexOf("+");
