@@ -1,3 +1,4 @@
+
 const colourSwitch = document.getElementById("input-colour-switch");
 colourSwitch.addEventListener("click", checkMode);
 document.getElementById("operationLog").style.display = "none";
